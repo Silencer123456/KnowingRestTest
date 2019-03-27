@@ -27,36 +27,54 @@
 </head>
 <body>
 
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Search</a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/visualize.jsp">Visualize</a>
+    </nav>
+</header>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h1 class="mt-5">REST API Demonstration</h1>
             <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
             <ul class="list-unstyled">
-                <li>Bootstrap 4.2.1</li>
-                <li>jQuery 3.3.1</li>
             </ul>
             <form action="${pageContext.request.contextPath}/query" method="get">
                 <input class="form-control" type="text" placeholder="Search" name="queryText" aria-label="Search">
-                <input class="btn btn-primary" type="submit" value="Submit">
+                <input class="btn btn-primary" type="submit" name="queryButton" value="Submit">
             </form>
+
+
         </div>
     </div>
 
     <button onclick="myFunction(${plot})">Try it</button>
 
     <div class="list-group">
-        <jsp:useBean id="docs" scope="request" type="java.util.List"/>
-        <c:forEach var="doc" items="${docs}">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">${doc.getTitle()}</h5>
-                    <small>${doc.getYear()}</small>
-                </div>
-                <p class="mb-1">${doc.getAbstractText()}</p>
-                <small>${doc.getNumber()}</small>
-            </a>
-        </c:forEach>
+        <c:choose>
+            <c:when test="${not empty docs}">
+                <jsp:useBean id="docs" scope="request" type="java.util.List"/>
+                <c:forEach var="doc" items="${docs}">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">${doc.getTitle()}</h5>
+                            <small>${doc.getYear()}</small>
+                        </div>
+                        <small>${doc.getNumber()}</small>
+                        <p class="mb-1">${doc.getAbstractText()}</p>
+                        <small>Authors:</small>
+                        <c:forEach var="author" items="${doc.getAuthors()}">
+                            <small>${author}, </small>
+                        </c:forEach>
+                    </a>
+                </c:forEach>
+            </c:when>
+            <c:otherwise>
+                No results to display
+            </c:otherwise>
+        </c:choose>
     </div>
 </div>
 </body>

@@ -9,17 +9,15 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class RecordService {
-    private static WebTarget resource = ClientBuilder.newBuilder()
-            .build().target("http://localhost:8080/query/1");
 
-    /*private static Client client = ClientBuilder.newClient();
-    private static WebTarget webTarget
-            = client.target("http://localhost:8080/");*/
+    public static Report fetchReport(String queryText, TypeOfData typeOfData, String filter, String path) throws IOException{
+        WebTarget resource = ClientBuilder.newBuilder()
+                .build().target("http://localhost:8080/" + path);
 
-    public static Report fetchReport(String queryText, TypeOfData typeOfData, String filter) throws IOException{
         Query q = new Query();
         q.setQuery(queryText);
         q.setFilter(filter);
@@ -35,7 +33,7 @@ public class RecordService {
         JsonNode actualObj = mapper.readTree(json);
         JsonNode reportNode = actualObj.path("reportJson");
 
-        Report report =  deserializeReport(reportNode);
+        Report report = deserializeReport(reportNode);
         return report;
     }
 
@@ -47,26 +45,20 @@ public class RecordService {
         JsonNode documents = reportNode.path("documents");
         for (JsonNode doc : documents) {
             Record record = new Record();
-            record.setAbstractText(doc.get("abstract").textValue());
-            record.setDataSource(doc.get("dataSource").textValue());
-            record.setNumber(doc.get("number").textValue());
-            record.setTitle(doc.get("title").textValue());
-            record.setYear(doc.get("year").textValue());
-            record.setNumber(doc.get("number").textValue());
+
+            record.setAbstractText(extractTextValueFromNode(doc, "abstract"));
+
+            record.setDataSource(extractTextValueFromNode(doc, "dataSource"));
+            record.setNumber(extractTextValueFromNode(doc, "number"));
+            record.setTitle(extractTextValueFromNode(doc, "title"));
+            record.setYear(extractTextValueFromNode(doc, "year"));
+            record.setNumber(extractTextValueFromNode(doc, "number"));
 
             JsonNode authors = doc.path("authors");
-            List<String> authorNames = new ArrayList<>();
-            for (JsonNode authorNode : authors) {
-                authorNames.add(authorNode.path("name").textValue());
-            }
-            record.setAuthors(authorNames);
+            record.setAuthors(getListFromNode(authors, "name"));
 
             JsonNode owners = doc.path("owners");
-            List<String> ownerNames = new ArrayList<>();
-            for (JsonNode ownerNode : owners) {
-                ownerNames.add(ownerNode.path("name").textValue());
-            }
-            record.setOwners(ownerNames);
+            record.setOwners(getListFromNode(owners, "name"));
 
             records.add(record);
         }
@@ -74,5 +66,36 @@ public class RecordService {
         report.setDocuments(records);
 
         return report;
+    }
+
+    private static List<String> getListFromNode(JsonNode authors, String name) {
+        if (authors == null) {
+            return Collections.emptyList();
+        }
+
+        List<String> list = new ArrayList<>();
+        for (JsonNode authorNode : authors) {
+            list.add(authorNode.path(name).textValue());
+        }
+
+        return list;
+    }
+
+    private static String extractTextValueFromNode(JsonNode node, String fieldName) {
+        JsonNode n = node.get(fieldName);
+        if (n == null) {
+            return "";
+        }
+
+        return n.textValue();
+    }
+
+    private static int extractIntValueFromNode(JsonNode node, String fieldName) {
+        JsonNode n = node.get(fieldName);
+        if (n == null) {
+            return 0;
+        }
+
+        return n.intValue();
     }
 }

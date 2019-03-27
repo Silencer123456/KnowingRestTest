@@ -16,6 +16,13 @@
   </head>
   <body>
 
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="query.jsp">Search</a>
+      <a class="navbar-brand" href="${pageContext.request.contextPath}/visualize.jsp">Visualize</a>
+    </nav>
+  </header>
+
   <!-- Full Page Image Header with Vertically Centered Content -->
   <header class="masthead">
     <div class="container h-100">
