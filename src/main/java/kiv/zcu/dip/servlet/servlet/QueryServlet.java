@@ -28,7 +28,7 @@ public class QueryServlet extends HttpServlet {
 
         showPlot();
 
-        request.setAttribute("report", report);
+        request.setAttribute("docs", report.getDocuments());
         request.getRequestDispatcher("/hello.jsp").forward(request, response);
 
     }
