@@ -2,10 +2,7 @@ package kiv.zcu.dip.servlet.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import kiv.zcu.dip.servlet.model.Query;
-import kiv.zcu.dip.servlet.model.Record;
-import kiv.zcu.dip.servlet.model.RecordList;
-import kiv.zcu.dip.servlet.model.Report;
+import kiv.zcu.dip.servlet.model.*;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
@@ -22,11 +19,11 @@ public class RecordService {
     private static WebTarget webTarget
             = client.target("http://localhost:8080/");*/
 
-    public static Report fetchReport(int offset, int num) throws IOException{
+    public static Report fetchReport(String queryText, TypeOfData typeOfData, String filter) throws IOException{
         Query q = new Query();
-        q.setQuery("car");
-        q.setFilter("");
-        q.setSourceType("patent");
+        q.setQuery(queryText);
+        q.setFilter(filter);
+        q.setSourceType(typeOfData.name());
 
         Response r = resource.request(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
