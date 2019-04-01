@@ -53,15 +53,23 @@ public class VisualizeServlet extends HttpServlet {
 
         Plot.show(Histogram.create("Distribution of prices", cuteAnimals, "rating"));*/
 
-        List<String> years = new ArrayList<>();
+        List<Integer> years = new ArrayList<>();
         for (Record record : documents) {
-            years.add(record.getYear());
+            int year = 0;
+            try {
+                year = Integer.parseInt(record.getYear());
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+            years.add(year);
         }
 
-        Table titleTable = Table.create("Years")
-                .addColumns(StringColumn.create("year", years));
+        int [] yearsArray = convertIntegers(years);
 
-        Plot.show(Histogram.create("Distribution of years", titleTable, "year"));
+        Table yearTable = Table.create("Years")
+                .addColumns(IntColumn.create("year", yearsArray));
+
+        Plot.show(Histogram.create("Distribution of years", yearTable, "year"));
 
         /*Object[] x = {"sheep", "cows", "fish", "tree sloths"};
         double[] y = {1, 4, 9, 16};
@@ -72,5 +80,20 @@ public class VisualizeServlet extends HttpServlet {
 
         return new Figure(trace).asJavascript("test");*/
         return "";
+    }
+
+    /**
+     * Converts an integer ArrayList to integer array
+     * @param integers -- Integer ArrayList
+     * @return -- Converted integer array
+     */
+    public static int[] convertIntegers(List<Integer> integers)
+    {
+        int[] ret = new int[integers.size()];
+        for (int i=0; i < ret.length; i++)
+        {
+            ret[i] = integers.get(i);
+        }
+        return ret;
     }
 }

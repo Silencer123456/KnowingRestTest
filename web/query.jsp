@@ -38,7 +38,7 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <h1 class="mt-5">REST API Demonstration</h1>
-            <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+            <p class="lead">Testing the Knowing IPR REST API</p>
             <ul class="list-unstyled">
             </ul>
             <form action="${pageContext.request.contextPath}/query" method="get">
