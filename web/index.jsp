@@ -11,20 +11,32 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/general.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <title>$Title$</title>
   </head>
   <body>
 
-  <header>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="query.jsp">Search</a>
-      <a class="navbar-brand" href="${pageContext.request.contextPath}/visualize.jsp">Visualize</a>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="query.jsp">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${pageContext.request.contextPath}/visualize.jsp">Visualize</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Full Page Image Header with Vertically Centered Content -->
   <header class="masthead">
+
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">

@@ -43,16 +43,6 @@ public class VisualizeServlet extends HttpServlet {
     }
 
     private String showPlot(List<Record> documents) {
-        String[] animals = {"franta", "pepa", "honza", "franta"};
-        double[] cuteness = {100, 100, 120, 150};
-
-        /*Table cuteAnimals = Table.create("Cute Animals")
-                .addColumns(
-                        StringColumn.create("Animal types", animals),
-                        DoubleColumn.create("rating", cuteness));
-
-        Plot.show(Histogram.create("Distribution of prices", cuteAnimals, "rating"));*/
-
         List<Integer> years = new ArrayList<>();
         for (Record record : documents) {
             int year = 0;
@@ -71,14 +61,6 @@ public class VisualizeServlet extends HttpServlet {
 
         Plot.show(Histogram.create("Distribution of years", yearTable, "year"));
 
-        /*Object[] x = {"sheep", "cows", "fish", "tree sloths"};
-        double[] y = {1, 4, 9, 16};
-
-        BarTrace trace = BarTrace.builder(x, y).build();
-
-        Plot.show(new Figure(trace));
-
-        return new Figure(trace).asJavascript("test");*/
         return "";
     }
 
