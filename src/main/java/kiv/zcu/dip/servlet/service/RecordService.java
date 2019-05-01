@@ -22,11 +22,11 @@ public class RecordService {
     /**
      * Fetches report by sending a REST request to the server
      *
-     * @param queryText
-     * @param typeOfData
-     * @param filter
-     * @param path
-     * @return
+     * @param queryText - The text of query
+     * @param typeOfData - Type of data to receive
+     * @param filter - Filter on field
+     * @param path - path to the REST method
+     * @return Report  with returned results
      * @throws IOException
      */
     public static Report fetchReport(String queryText, TypeOfData typeOfData, String filter, String path) throws IOException{
@@ -52,6 +52,12 @@ public class RecordService {
         return report;
     }
 
+    /**
+     * Does the deserialization of the report from JSON
+     *
+     * @param reportNode - JSON node to deserialize
+     * @return - Deserialized report
+     */
     private static Report deserializeReport(JsonNode reportNode) {
         Report report = new Report();
         report.setSummary(reportNode.get("summary").textValue());

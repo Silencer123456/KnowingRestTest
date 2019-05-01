@@ -13,6 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Servlet for processing a query. Calls the REST server to fetch
+ * the report with results to the query. The response is forwarded
+ * to the query jsp page.
+ */
 @WebServlet("/query")
 public class QueryServlet extends HttpServlet {
 

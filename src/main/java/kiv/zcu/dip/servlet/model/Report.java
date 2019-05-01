@@ -2,6 +2,9 @@ package kiv.zcu.dip.servlet.model;
 
 import java.util.List;
 
+/**
+ * Report containing a list of records and summary
+ */
 public class Report {
     private String summary;
     private List<Record> documents;

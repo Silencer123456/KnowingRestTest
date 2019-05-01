@@ -1,5 +1,8 @@
 package kiv.zcu.dip.servlet.model;
 
+/**
+ * Represents a single query
+ */
 public class Query {
     private String sourceType;
     private String filter;

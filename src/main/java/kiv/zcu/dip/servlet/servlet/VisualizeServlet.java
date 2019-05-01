@@ -20,6 +20,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Servlet for processing a query and visualizing it on a graph.
+ */
 @WebServlet("/visualize")
 public class VisualizeServlet extends HttpServlet {
 
@@ -54,6 +57,12 @@ public class VisualizeServlet extends HttpServlet {
         return ret;
     }
 
+    /**
+     * Creates a plot to be rendered in a separate window
+     *
+     * @param documents - documents, for which to create the plot
+     * @return
+     */
     private String showPlot(List<Record> documents) {
         List<Integer> years = new ArrayList<>();
         for (Record record : documents) {
