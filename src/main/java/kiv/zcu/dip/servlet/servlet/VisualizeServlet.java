@@ -7,11 +7,9 @@ import kiv.zcu.dip.servlet.service.RecordService;
 import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 import tech.tablesaw.api.IntColumn;
-import tech.tablesaw.api.StringColumn;
 import tech.tablesaw.api.Table;
 import tech.tablesaw.plotly.Plot;
 import tech.tablesaw.plotly.api.Histogram;
-import tech.tablesaw.plotly.api.ParetoPlot;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -42,6 +40,20 @@ public class VisualizeServlet extends HttpServlet {
         request.getRequestDispatcher("/visualize.jsp").forward(request, response);
     }
 
+    /**
+     * Converts an integer ArrayList to integer array
+     *
+     * @param integers -- Integer ArrayList
+     * @return -- Converted integer array
+     */
+    public static int[] convertIntegers(List<Integer> integers) {
+        int[] ret = new int[integers.size()];
+        for (int i = 0; i < ret.length; i++) {
+            ret[i] = integers.get(i);
+        }
+        return ret;
+    }
+
     private String showPlot(List<Record> documents) {
         List<Integer> years = new ArrayList<>();
         for (Record record : documents) {
@@ -54,7 +66,7 @@ public class VisualizeServlet extends HttpServlet {
             years.add(year);
         }
 
-        int [] yearsArray = convertIntegers(years);
+        int[] yearsArray = convertIntegers(years);
 
         Table yearTable = Table.create("Years")
                 .addColumns(IntColumn.create("year", yearsArray));
@@ -62,20 +74,5 @@ public class VisualizeServlet extends HttpServlet {
         Plot.show(Histogram.create("Distribution of years", yearTable, "year"));
 
         return "";
-    }
-
-    /**
-     * Converts an integer ArrayList to integer array
-     * @param integers -- Integer ArrayList
-     * @return -- Converted integer array
-     */
-    public static int[] convertIntegers(List<Integer> integers)
-    {
-        int[] ret = new int[integers.size()];
-        for (int i=0; i < ret.length; i++)
-        {
-            ret[i] = integers.get(i);
-        }
-        return ret;
     }
 }

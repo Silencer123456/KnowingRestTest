@@ -2,9 +2,14 @@ package kiv.zcu.dip.servlet.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import kiv.zcu.dip.servlet.model.*;
+import kiv.zcu.dip.servlet.model.Query;
+import kiv.zcu.dip.servlet.model.Record;
+import kiv.zcu.dip.servlet.model.Report;
+import kiv.zcu.dip.servlet.model.TypeOfData;
 
-import javax.ws.rs.client.*;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
@@ -14,6 +19,16 @@ import java.util.List;
 
 public class RecordService {
 
+    /**
+     * Fetches report by sending a REST request to the server
+     *
+     * @param queryText
+     * @param typeOfData
+     * @param filter
+     * @param path
+     * @return
+     * @throws IOException
+     */
     public static Report fetchReport(String queryText, TypeOfData typeOfData, String filter, String path) throws IOException{
         WebTarget resource = ClientBuilder.newBuilder()
                 .build().target("http://localhost:8080/" + path);

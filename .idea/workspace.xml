@@ -2,20 +2,41 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="RestTest:war" />
+      <artifact name="RestTest:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73b7a2a1-948b-4cb1-b6a0-bbcb522124ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/RestTest_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RestTest_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_5_0_b32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_25_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_25_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_25_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_json_jackson_2_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RestTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RestTest-1.0/WEB-INF/classes/META-INF/RestTest.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RestTest-1.0/WEB-INF/lib/jackson-databind-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/RestTest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RestTest-1.0/WEB-INF/classes/kiv/zcu/dip/servlet/service/RecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RestTest-1.0/WEB-INF/classes/kiv/zcu/dip/servlet/service/RecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RestTest-1.0/WEB-INF/lib/jackson-annotations-2.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kiv/zcu/dip/servlet/service/RecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kiv/zcu/dip/servlet/service/RecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/query.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/query.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,31 +49,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/query.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+            <state relative-caret-position="106">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -60,73 +63,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/QueryServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="-85">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1020">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/model/RecordList.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/model/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/model/Record.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1214#1215#0" expanded="true" />
-                <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1368#1369#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1504#1505#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -145,6 +113,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>test</find>
+      <find>fasterxml</find>
+      <find>jsonnode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,12 +134,12 @@
         <option value="$PROJECT_DIR$/web/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/model/Report.java" />
         <option value="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/model/Record.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/QueryServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/visualize.jsp" />
-        <option value="$PROJECT_DIR$/web/query.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java" />
+        <option value="$PROJECT_DIR$/web/query.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -195,6 +165,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
     <option name="width" value="845" />
     <option name="height" value="687" />
   </component>
@@ -224,6 +195,62 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestTest" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -233,7 +260,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556604924150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556690177961" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -268,7 +295,7 @@
       <deployment>
         <artifact name="RestTest:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/RestTest_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -350,7 +377,7 @@
       <updated>1553674211282</updated>
       <workItem from="1553674214249" duration="32206000" />
       <workItem from="1553852219821" duration="13608000" />
-      <workItem from="1556022324666" duration="2439000" />
+      <workItem from="1556022324666" duration="6307000" />
     </task>
     <task id="LOCAL-00001" summary="Added tablesaw visualization, demo histogram is generated">
       <created>1553694046531</created>
@@ -394,17 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1554531430373</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Edited building of the war file to include web.xml">
+      <created>1556605099105</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556605099105</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48253000" />
+    <option name="totallyTimeSpent" value="52121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1294" height="694" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16774717" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19773096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -414,8 +447,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.03253796" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25893825" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37900355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36476868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -449,22 +482,23 @@
     <MESSAGE value="Added visualization page, simple visualization is displayed but not displaying labels." />
     <MESSAGE value="Added visualization of years" />
     <MESSAGE value="Removed commented code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed commented code" />
+    <MESSAGE value="Edited building of the war file to include web.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited building of the war file to include web.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java</url>
-          <line>35</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -512,13 +546,6 @@
             <element signature="e#549#550#0" expanded="true" />
             <element signature="e#583#584#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -665,30 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/query.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/QueryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/model/RecordList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -736,16 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -753,10 +746,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/query.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/VisualizeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/servlet/QueryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="75" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="527">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kiv/zcu/dip/servlet/service/RecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -827,7 +861,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.4</last-edited>
+          <last-edited>Maven: com.coverity.security:coverity-escapers:1.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
